@@ -1,0 +1,45 @@
+.review {
+    position: relative;
+    // черно-белое изображение
+    filter: grayscale(100%);
+
+    &:hover {
+        .review__hover {
+            opacity: 1;
+        }
+    }
+}
+
+.review__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(#000, .8);
+    padding: 40px 5% 10px;
+    color: $white;
+    opacity: 0;
+    transition: opacity .3s;
+}
+.review__avatar {
+    object-fit: cover;
+    width: $width;
+    height: $height;
+}
+
+.review__title {
+    font-family: $GadalinRegular;
+    // font-size: 14px;
+    // font-weight: 400;
+    @include font (14px, 400);
+    line-height: 28.11px;
+    text-transform: uppercase;
+}
+
+.review__text {
+    // font-size: 14px;
+    // font-weight: 300;
+    @include font (14px, 300);
+    line-height: 24px;
+}

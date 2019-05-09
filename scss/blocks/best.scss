@@ -1,0 +1,17 @@
+.best {
+    background: url("../images/best/bg.png") center center / cover no-repeat;
+}
+.best__list {
+    display: flex;
+}
+
+.best__item {
+    flex: 1;
+    margin-right: 10px;
+    // выравнивание по pixel perfect
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

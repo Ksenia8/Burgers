@@ -1,0 +1,24 @@
+.header {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    @include flex ();
+}
+
+.header__buttons {
+    // display: flex;
+    // justify-content: flex-end;
+    // align-items: center;
+    @include flex (flex-end);
+}
+
+.header__order-btn {
+    margin-left: 15px;
+    // выравнивание по pixel perfect
+    margin-top: 6px;
+}
+
+// выравнивание по pixel perfect
+.logo__header {
+    padding-top: 10px;;
+}

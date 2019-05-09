@@ -1,0 +1,42 @@
+.btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    // background-color: $red;
+    text-transform: uppercase;
+    color: $white;
+    // font-size: 13px;
+    // font-weight: 500;
+    @include font (13px);
+    display: inline-block;
+    text-decoration: none;
+
+    &--red {
+        background-color: $red;
+    
+        &:hover {
+            background-color: #c1401e;
+        }
+    
+        &:focus {
+            outline: 2px solid darken($red, 10%);
+        }
+    }
+
+    &--bg-black {
+        background-color: #2f3234;
+
+        &:hover {
+            background-color: #1f2122;  
+        }
+
+        &:focus {
+            outline: 2px solid darken($grey, 10%);
+        }
+    }
+
+    // выравнивание по pixel perfect
+    &--review {
+        margin-top: 11px;
+    }
+}
+

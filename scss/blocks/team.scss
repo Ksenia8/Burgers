@@ -1,0 +1,16 @@
+.team {
+    background: url(../images/team/team.png) center center / cover no-repeat;
+    position: relative;
+}
+
+.section-team__img {
+	position: absolute;
+    background: url(../images/team/Rectangle_1.png) left / cover;
+    width: 50%;
+	height: 100%;
+	top: 0;
+    right: 0;
+    background-color: $grey;
+    opacity: 0.93;
+}
+

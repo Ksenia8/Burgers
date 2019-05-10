@@ -1,0 +1,19 @@
+.accordeon {
+  width: 100%;
+  max-width: 600px;
+  min-height: 0;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fefffa;
+  overflow: hidden; }
+
+.accordeon__info {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0); }

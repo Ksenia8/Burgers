@@ -1,5 +1,5 @@
 .hero {
-    background: url("../images/hero/textura.png") center center / cover no-repeat;
+    background: url("../images/hero/section1_hero.jpg") center center / cover no-repeat;
     position: relative;
 }
 
@@ -11,10 +11,22 @@
     flex: 0.8;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     // выравнивание по pixel perfect
     &-image {
-        margin: 0 10px 83px 19px;
+        padding: 0 10px 83px 19px;
+        width: 49%;
+
+        & img {
+            max-width: 100%;
+        }
+    }
+
+    &-text {
+        width: 49%;
+        padding-top: 70px;
+        padding-bottom: 32px;
     }
 }
 
@@ -22,7 +34,7 @@
     // font-size: 65px;
     // font-weight: 500;
     @include font (65px);
-    font-family: $LifehackMedium;
+    font-family: "Lifehack";
     line-height: 1;
     color: $white;
     letter-spacing: -1.63px;

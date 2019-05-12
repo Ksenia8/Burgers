@@ -17,7 +17,7 @@
     right: 0;
     bottom: 0;
     background: rgba(#000, .8);
-    padding: 40px 5% 10px;
+    padding: 40px 6% 10px;
     color: $white;
     opacity: 0;
     transition: opacity .3s;
@@ -29,7 +29,7 @@
 }
 
 .review__title {
-    font-family: $GadalinRegular;
+    font-family: "Gagalin";
     // font-size: 14px;
     // font-weight: 400;
     @include font (14px, 400);

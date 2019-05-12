@@ -1,3 +1,34 @@
 .contacts {
-    background: url(../images/contacts/maps.png) center center / cover no-repeat;
+    background: url("../images/contacts/section9_map.jpg") center center / cover no-repeat;
+    position: relative;
+}
+
+.markers__list img {
+    width: 4.6rem;
+    height: 5.7rem;
+    max-width: 100%;
+}
+
+.marker-1 {
+    position: absolute;
+    top: 13rem;
+    right: 55.5rem;
+}
+
+.marker-2 {
+    position: absolute;
+    top: 23rem;
+    right: 43rem;   
+}
+
+.marker-3 {
+    position: absolute;
+    top: 34rem;
+    right: 22rem;
+}
+
+.marker-4 {
+    position: absolute;
+    top: 43rem;
+    right: 55rem;
 }

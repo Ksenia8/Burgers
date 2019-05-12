@@ -1,0 +1,47 @@
+.form {
+    background: url("../images/form/section8_form.jpg") center center / cover no-repeat;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__label {
+    display: block;
+}
+
+.form__control {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 1px solid #d1cfcb;
+    border-radius: 3px;
+    padding: 6px 12px;
+    
+    overflow: auto;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.2;
+    max-width: 100%;
+    min-width: 100%;
+    /*resize: vertical;*/
+}
+
+.form__control:hover {
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+}
+
+.form__control:focus {
+    border-color: red;
+}
+
+.form__control:active {
+    border: 2px solid #f9b43b;
+}
+
+.form__actions {
+    background: #aaa;
+    padding: 15px;
+}

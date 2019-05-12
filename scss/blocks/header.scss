@@ -3,6 +3,7 @@
     // align-items: center;
     // justify-content: space-between;
     @include flex ();
+    padding-top: 10px;
 }
 
 .header__buttons {
@@ -18,7 +19,15 @@
     margin-top: 6px;
 }
 
-// выравнивание по pixel perfect
 .logo__header {
-    padding-top: 10px;;
+    position: relative;
+    width: 9.2rem;
+    height: 6.9rem;
+}
+
+.logo-img {
+    position: absolute;
+    max-width: 100%;
+    top: 0;
+    bottom: 0;
 }

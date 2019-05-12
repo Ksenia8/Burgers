@@ -1,0 +1,61 @@
+.footer {
+    background: url("../images/footer/footer.jpg");
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.footer__container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.6rem 0;
+}
+
+.footer__contacts p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: "Ubuntu";
+    color: $white;
+}
+
+.footer__contacts p:nth-child(2) {
+    color: #e45028;
+    font-family: "Ubuntu";
+    font-weight: 700;
+    
+}
+
+.footer__block {
+    width: 50%;
+}
+
+.social {
+    width: 20px;
+    height: 20px;
+    
+
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: row;
+}
+
+.social_vk {
+    background: url(../images/footer/icons/vk.svg);
+}
+
+.social_fb {
+    background: url(../images/footer/icons/fb.svg);
+}
+
+.social_inst {
+    background: url(../images/footer/icons/inst.svg);
+}
+
+.social_tw {
+    background: url(../images/footer/icons/twitter.svg);
+}

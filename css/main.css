@@ -12,7 +12,7 @@ body {
   line-height: 1.42;
   height: 100%;
   position: relative;
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500; }
 
 .wrapper {
@@ -64,37 +64,43 @@ footer {
   position: relative; }
 
 @font-face {
-  font-family: 'Gadalin Regular';
+  font-family: 'Gagalin';
   src: url("../fonts/Gagalin/gagalin-regular-webfont.woff"), url("../fonts/Gagalin/gagalin-regular-webfont.woff2");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Lifehack Medium';
+  font-family: 'Lifehack';
   src: url("../fonts/lifehack_medium-webfont.woff"), url("../fonts/lifehack_medium-webfont.woff2");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu/ubuntu-regular-webfont.woff"), url("../fonts/Ubuntu/ubuntu-regular-webfont.woff2");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/Ubuntu/ubuntu-medium-webfont.woff"), url("../fonts/Ubuntu/ubuntu-medium-webfont.woff2");
-  font-weight: normal;
+  src: url("../fonts/Ubuntu/ubuntu-light-webfont.woff"), url("../fonts/Ubuntu/ubuntu-light-webfont.woff2");
+  font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Lifehack Italic';
-  src: url("../fonts/lifehack_medium-webfont.woff"), url("../fonts/lifehack_medium-webfont.woff2");
-  font-weight: normal;
-  font-style: italic; }
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu/ubuntu-medium-webfont.woff"), url("../fonts/Ubuntu/ubuntu-medium-webfont.woff2");
+  font-weight: 500;
+  font-style: normal; }
 
 @font-face {
-  font-family: 'UbuntuBold';
+  font-family: 'Ubuntu';
   src: url("../fonts/Ubuntu/ubuntu-b-webfont.woff"), url("../fonts/Ubuntu/ubuntu-b-webfont.woff2");
-  font-weight: normal;
-  font-style: bold; }
+  font-weight: 700;
+  font-style: normal; }
 
 .hero {
-  background: url("../images/hero/textura.png") center center/cover no-repeat;
+  background: url("../images/hero/section1_hero.jpg") center center/cover no-repeat;
   position: relative; }
 
 .hero__container {
@@ -111,14 +117,24 @@ footer {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
   .hero__content-image {
-    margin: 0 10px 83px 19px; }
+    padding: 0 10px 83px 19px;
+    width: 49%; }
+    .hero__content-image img {
+      max-width: 100%; }
+  .hero__content-text {
+    width: 49%;
+    padding-top: 70px;
+    padding-bottom: 32px; }
 
 .hero__desc {
   font-size: 65px;
   font-weight: 500;
-  font-family: "Lifehack Medium";
+  font-family: "Lifehack";
   line-height: 1;
   color: #ffffff;
   letter-spacing: -1.63px;
@@ -133,7 +149,8 @@ footer {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 10px; }
 
 .header__buttons {
   display: -webkit-box;
@@ -151,7 +168,15 @@ footer {
   margin-top: 6px; }
 
 .logo__header {
-  padding-top: 10px; }
+  position: relative;
+  width: 9.2rem;
+  height: 6.9rem; }
+
+.logo-img {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  bottom: 0; }
 
 .menu__list {
   display: -webkit-box;
@@ -162,8 +187,6 @@ footer {
   align-items: center; }
 
 .menu__item {
-  margin-right: 11.3px;
-  margin-top: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,8 +200,8 @@ footer {
     height: 4px;
     background: #ffffff;
     border-radius: 50%;
-    margin-right: 5px;
-    margin-left: 15px; }
+    margin-left: 15px;
+    margin-right: 16.3px; }
   .menu__item:last-child {
     margin-right: 0; }
     .menu__item:last-child:after {
@@ -217,7 +240,8 @@ footer {
 
 .section-title {
   font-size: 72px;
-  font-family: "Gadalin Regular";
+  font-family: "Gagalin";
+  font-weight: 400;
   margin-bottom: 45px;
   line-height: 1;
   color: #f9b43b; }
@@ -241,7 +265,7 @@ footer {
   background: url("../images/hero/arrow-scroll.png"); }
 
 .best {
-  background: url("../images/best/bg.png") center center/cover no-repeat; }
+  background: url("../images/best/section2_best.jpg") center center/cover no-repeat; }
 
 .best__list {
   display: -webkit-box;
@@ -268,9 +292,11 @@ footer {
   -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 33px; }
+  .feature__pic img {
+    max-width: 100%; }
 
 .feature__title {
-  font-family: "Lifehack Italic";
+  font-family: "Lifehack";
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 10px; }
@@ -283,15 +309,15 @@ footer {
   line-height: 24.07px; }
 
 .burgers {
-  background: url(../images/burgers/Rectangle_1.png) center center/cover no-repeat; }
+  background: url("../images/burgers/section3_burgers.jpg") center center/cover no-repeat; }
 
 .team {
-  background: url(../images/team/team.png) center center/cover no-repeat;
+  background: url("../images/team/section4_team.jpg") center center/cover no-repeat;
   position: relative; }
 
 .section-team__img {
   position: absolute;
-  background: url(../images/team/Rectangle_1.png) left/cover;
+  background: url("../images/team/section4_grey.jpg") left/cover;
   width: 50%;
   height: 100%;
   top: 0;
@@ -300,7 +326,7 @@ footer {
   opacity: 0.93; }
 
 .menu-block {
-  background: url(../images/menu/photo-1428660386617-8d277e7deaf2.png) center center/cover no-repeat; }
+  background: url("../images/menu/section5_menu.jpg") center center/cover no-repeat; }
 
 .reviews__list {
   height: 100%;
@@ -313,6 +339,9 @@ footer {
 .reviews__item {
   width: 25%;
   height: 50%; }
+
+.reviews__image img {
+  max-width: 100%; }
 
 .review {
   position: relative;
@@ -328,7 +357,7 @@ footer {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
-  padding: 40px 5% 10px;
+  padding: 40px 6% 10px;
   color: #ffffff;
   opacity: 0;
   -webkit-transition: opacity .3s;
@@ -342,7 +371,7 @@ footer {
   height: 100%; }
 
 .review__title {
-  font-family: "Gadalin Regular";
+  font-family: "Gagalin";
   font-size: 14px;
   font-weight: 400;
   line-height: 28.11px;
@@ -353,18 +382,164 @@ footer {
   font-weight: 300;
   line-height: 24px; }
 
+.HowWork {
+  background: url("../images/HowWork/section7_howwork.jpg") center center/cover no-repeat; }
+
+.form {
+  background: url("../images/form/section8_form.jpg") center center/cover no-repeat; }
+
+.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.form__label {
+  display: block; }
+
+.form__control {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: 1px solid #d1cfcb;
+  border-radius: 3px;
+  padding: 6px 12px;
+  overflow: auto;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.2;
+  max-width: 100%;
+  min-width: 100%;
+  /*resize: vertical;*/ }
+
+.form__control:hover {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4); }
+
+.form__control:focus {
+  border-color: red; }
+
+.form__control:active {
+  border: 2px solid #f9b43b; }
+
+.form__actions {
+  background: #aaa;
+  padding: 15px; }
+
 .contacts {
-  background: url(../images/contacts/maps.png) center center/cover no-repeat; }
+  background: url("../images/contacts/section9_map.jpg") center center/cover no-repeat;
+  position: relative; }
+
+.markers__list img {
+  width: 4.6rem;
+  height: 5.7rem;
+  max-width: 100%; }
+
+.marker-1 {
+  position: absolute;
+  top: 13rem;
+  right: 55.5rem; }
+
+.marker-2 {
+  position: absolute;
+  top: 23rem;
+  right: 43rem; }
+
+.marker-3 {
+  position: absolute;
+  top: 34rem;
+  right: 22rem; }
+
+.marker-4 {
+  position: absolute;
+  top: 43rem;
+  right: 55rem; }
+
+.footer {
+  background: url("../images/footer/footer.jpg");
+  position: absolute;
+  bottom: 0; }
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.6rem 0; }
+
+.footer__contacts p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  font-family: "Ubuntu";
+  color: #ffffff; }
+
+.footer__contacts p:nth-child(2) {
+  color: #e45028;
+  font-family: "Ubuntu";
+  font-weight: 700; }
+
+.footer__block {
+  width: 50%; }
+
+.social {
+  width: 20px;
+  height: 20px; }
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.social_vk {
+  background: url(../images/footer/icons/vk.svg); }
+
+.social_fb {
+  background: url(../images/footer/icons/fb.svg); }
+
+.social_inst {
+  background: url(../images/footer/icons/inst.svg); }
+
+.social_tw {
+  background: url(../images/footer/icons/twitter.svg); }
 
 .page-nav {
   position: fixed;
-  right: 13rem;
-  top: 18.4rem;
+  right: 5rem;
+  top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
 .page-nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.page-nav__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,26 +554,15 @@ footer {
   border: 1px solid transparent;
   border-radius: 50%;
   margin-bottom: 5px; }
-  .page-nav__item--active {
+  .page-nav__link--active {
     width: 1.6rem;
     height: 1.6rem;
     border: 1px solid #ffffff; }
-  .page-nav__item:hover {
+  .page-nav__link:hover {
     width: 1.6rem;
     height: 1.6rem;
     border: 1px solid #ffffff;
     border-radius: 50%; }
-
-.page-nav__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
   .page-nav__link::after {
     content: "";
     display: -webkit-box;

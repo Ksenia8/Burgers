@@ -8,10 +8,14 @@
     // margin-bottom: 10px;
     // выравнивание по pixel perfect
     margin-bottom: 33px;
+
+    & img {
+        max-width: 100%;
+    }
 }
 
 .feature__title {
-    font-family: $LifehackItalic;
+    font-family: "Lifehack";
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -23,4 +27,5 @@
     color:$grey;
     opacity: 0.8;
     line-height: 24.07px;
+    
 }

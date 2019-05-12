@@ -5,9 +5,8 @@
 
 .menu__item {
     // выравнивание по pixel perfect
-    margin-right: 11.3px;
-    margin-top: 7px;
-    
+    // margin-right: 11.3px;
+        
     display: flex;
     align-items: center;
     
@@ -21,8 +20,8 @@
         border-radius: 50%;
         
          // выравнивание по pixel perfect
-        margin-right: 5px;
         margin-left: 15px;
+        margin-right: 16.3px;
          
     }
 
@@ -40,5 +39,5 @@
     color: $white;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: $Ubuntu;
+    font-family: "Ubuntu";
 }

@@ -76,12 +76,6 @@ footer {
   font-style: normal; }
 
 @font-face {
-  font-family: 'Lifehack';
-  src: url("../fonts/lifehack_medium-webfont.woff"), url("../fonts/lifehack_medium-webfont.woff2");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
   font-family: 'Ubuntu';
   src: url("../fonts/Ubuntu/ubuntu-regular-webfont.woff"), url("../fonts/Ubuntu/ubuntu-regular-webfont.woff2");
   font-weight: normal;

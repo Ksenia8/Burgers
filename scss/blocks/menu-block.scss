@@ -1,3 +1,124 @@
 .menu-block {
     background: url("../images/menu/section5_menu.jpg") center center / cover no-repeat;
+    background-size: cover;
+    position: relative;
 }
+.menu-acco {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	@extend %clearfix;
+}
+
+.menu-acco__item {
+	float: left;
+    height: 100%;
+       
+
+	&.active {
+		.menu-acco__trigger-text {
+			color: $orange;
+		}
+	}
+}
+
+.menu-acco__trigger {
+	width: rem(80px);
+	display: block;
+	height: 100%;
+	float: left;
+	background-size: cover;
+	background-position: center center;
+    background-repeat: no-repeat;
+	text-decoration: none;
+    position: relative;
+  
+    @include phones {
+        width: rem(50px);
+    }
+}
+
+.menu-acco__trigger-text {
+	font-size: rem(40px);
+	color: #fff;
+	font-family: "Gagalin";
+	text-align: center;
+	white-space: nowrap;
+    position: absolute;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    left: 50%;
+    top: 100%;
+    margin-top: rem(-20px);
+    
+
+    @include phones {
+        font-size: rem(26px);
+    }
+}
+
+.menu-acco__content {
+	height: 100%;
+	float: left;
+	background: rgba(#2f3234, .93);
+	width: 0;
+	overflow: hidden;
+}
+
+.menu-acco__text {
+    font-family: "Ubuntu";
+    font-weight: 300;
+	font-size: rem(14px);
+	color: #fff;
+	padding: rem(60px) rem(30px);
+	width: 100%;
+    line-height: 1.8;
+    display: none;
+
+    @include phones {
+        padding: rem(25px) rem(15px);
+  }
+}
+
+.menu-acco__item a {
+    max-width: 100%;
+}
+
+.menu-acco__item {
+    position: relative;
+    display: flex;
+    z-index: 100;
+}
+
+.menu-acco__m--meat {
+    background-position: 32% 0;
+}
+
+.menu-acco__m {
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu__title {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+ul.menu-acco li:hover {
+    width: rem(621px);
+    transition: all 2s;
+
+}
+.menu-acco__item:nth-child(2) {
+    display: block;
+    position: absolute;
+    opacity: 0.8;
+    height: 100%;
+    right: 0;
+    z-index: -10;
+}
+

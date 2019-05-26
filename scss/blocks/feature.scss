@@ -1,16 +1,24 @@
 .feature__desc {
     text-align: center;
+
+        @include phones {
+            text-align: left; 
+            padding: 0 5%;
+        }
 }
 
 .feature__pic {
     display: flex;
     justify-content: center;
-    // margin-bottom: 10px;
-    // выравнивание по pixel perfect
-    margin-bottom: 33px;
+    
+    
 
-    & img {
-        max-width: 100%;
+    // & img {
+    //     max-width: 100%;
+    // }
+
+    @include phones {
+        margin-bottom: 0;
     }
 }
 
@@ -28,4 +36,19 @@
     opacity: 0.8;
     line-height: 24.07px;
     
+}
+
+.meat-icon {
+    width: 5.7rem;
+    height: 8.9rem;
+}
+
+.hand-icon {
+    width: 4.9rem;
+    height: 8.5rem;
+}
+
+.natural-icon {
+    width: 5.8rem;
+    height: 7.5rem;
 }

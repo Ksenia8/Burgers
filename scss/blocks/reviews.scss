@@ -7,8 +7,15 @@
 .reviews__item {
     width: 25%;
     height: 50%;
+    
+
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
 }
 
 .reviews__image img {
     max-width: 100%;
+    margin-bottom: -6px;
 }

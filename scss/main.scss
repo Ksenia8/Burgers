@@ -1,7 +1,10 @@
 // setups
 @import "variables";
 @import "mixins";
+@import "media";
 @import "common";
+
+
 
 // normalize
 @import "../normalize.css";
@@ -29,3 +32,7 @@
 @import "../scss/blocks/contacts.scss";
 @import "../scss/blocks/footer.scss";
 @import "../scss/blocks/page-nav.scss";
+@import "../scss/blocks/hamburger-menu.scss";
+
+
+

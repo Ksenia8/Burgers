@@ -3,6 +3,10 @@
 }
 .best__list {
     display: flex;
+
+    @include phones {
+       flex-direction: column; 
+    }
 }
 
 .best__item {
@@ -11,7 +15,13 @@
     // выравнивание по pixel perfect
     margin-bottom: 30px;
 
+    @include phones {
+        flex-direction: row;
+        display: flex;
+    }
+
     &:last-child {
         margin-right: 0;
     }
 }
+

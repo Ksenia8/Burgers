@@ -4,11 +4,20 @@
     // padding: 0;
 }
 html {
-    font-size: 62.5%;
+    // font-size: 62.5%;
     height: $height;
+    font-size: 16px;
+
+    @include tablets {
+        font-size: 13px;
+    }
+
+    @include phones {
+        font-size: 12px;
+    }
 }
 body {
-    font-size: 1.6rem;
+    font-size: rem(16px);
     line-height: 1.42;
     height: $height;
     position: relative;
@@ -19,20 +28,21 @@ body {
 .wrapper {
     position: relative;
     width: $width;
-    min-width: 960px;
+    
     min-height: $height;
     overflow: hidden;
 }
 .section {
-    height: 100vh;
+    // height: 100vh;
     min-height: 650px;
 }
 .container {
-    width: 940px;
+    max-width: 940px;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    // height: 100%;
     justify-content: center;
 }
 

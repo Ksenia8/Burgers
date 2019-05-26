@@ -8,9 +8,22 @@
     background: url("../images/team/section4_grey.jpg") left / cover;
     width: 50%;
 	height: 100%;
-	top: 0;
-    right: 0;
+    top: 0;
+    right: -1.1rem;
     background-color: $grey;
     opacity: 0.93;
+    max-width: 100%;
+
+    @include tablets {
+        width: 100%;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
 }
+
+
 

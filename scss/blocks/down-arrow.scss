@@ -1,10 +1,16 @@
 .down-arrow {
     display: block;
-    width: 29px;
-    height: 14px;
     position: absolute;
-    bottom: 40px;
+    bottom: rem(40px);
     left: 50%;
     transform: translateX(-50%);
-    background: url("../images/hero/arrow-scroll.png")
+    // background: url("../images/hero/arrow-scroll.png")
+
+}
+
+.scroll-icon {
+    width: rem(40px);
+    height: rem(15px);
+    fill: $white;
+    
 }

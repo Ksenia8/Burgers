@@ -21,6 +21,7 @@
     color: $white;
     opacity: 0;
     transition: opacity .3s;
+    
 
     @include tablets {
         padding: 10% 12% 0;
@@ -28,6 +29,7 @@
         flex-direction: column;
         flex-shrink: 1;
         align-items: center;
+        
     }
 }
 .review__avatar {
@@ -42,11 +44,11 @@
     // font-size: 14px;
     // font-weight: 400;
     @include font (14px, 400);
-    line-height: 28.11px;
+    line-height: rem(28.11px);
     text-transform: uppercase;
 
     @include phones {
-        font-size: 24px;
+        font-size: rem(24px);
         text-align: center;
     }
 }
@@ -55,7 +57,7 @@
     // font-size: 14px;
     // font-weight: 300;
     @include font (14px, 300);
-    line-height: 24px;
+    line-height: rem(24px);
 
     @include phones {
         display: none;

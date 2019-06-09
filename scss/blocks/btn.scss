@@ -9,6 +9,7 @@
     @include font (rem(13px));
     display: inline-block;
     text-decoration: none;
+    border: none;
 
     &--red {
         background-color: $red;

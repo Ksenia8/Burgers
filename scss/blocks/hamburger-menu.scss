@@ -49,6 +49,7 @@
 	bottom: rem(25px);
 	margin-top: 2rem;
 	display: none;
+	z-index: 1000;
   
 	@include tablets {
 		display: flex;
@@ -158,7 +159,7 @@
 	text-decoration: none;
 	  
   	&:hover {
-		font-size: rem(28px);
+		// font-size: rem(28px);
 		color: $orange;
 		font-weight: 700;
 	}

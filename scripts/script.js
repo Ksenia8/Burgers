@@ -63,3 +63,45 @@ function fullMenu() {
     return (-c / 2) * (t * (t - 2) - 1) + b;
   };
 }
+
+
+// /////// Slaider
+
+// const left = document.querySelector("#arrow-left");
+// const right = document.querySelector("#arrow-right");
+// const items = document.querySelector("#burger__items");
+// const computed = getComputedStyle(items);
+
+// right.addEventListener("click", function(e) {
+    
+//     e.preventDefault();
+
+//     let currentRight = parseInt(computed.right);
+
+//     if(!currentRight) {
+//       currentRight = 0;
+//     }
+
+//     if (currentRight < 2820) {
+//       items.style.right = currentRight + 2820 + 'px';
+//     } else if (currentRight = 2820) {
+//       items.style.right = 0 + "px";
+//     }
+// });
+
+// left.addEventListener("click", function(e) {
+
+//     e.preventDefault();
+
+//     let currentRight = parseInt(computed.right);
+
+//     if(!currentRight) {
+//         currentRight = 0;
+//     }
+
+//     if (currentRight > 0) {
+//         items.style.right = currentRight - 2820 + 'px';
+//     } else if (currentRight = -2820) {
+//         items.style.right = 2820 + "px";
+//     }
+// });

@@ -2,11 +2,11 @@ $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
     nav:true,
     loop:true,
-    margin: 10,
+    margin: 50,
     doots: false,
     smartSpeed: 1000,
     // navigation: true,
-    // navText: ["prev","next"],
+    navText: [$(".arrow-left"),$(".arrow-right")],
     responsive: {
       0: {
         items: 1
@@ -15,10 +15,10 @@ $(document).ready(function(){
   });
 
   owl.owlCarousel();
-  $('.next').click(function() {
+  $('.arrow-left').click(function() {
     owl.trigger('.next.owl.carousel');
   });
-  $('.prev').click(function() {
+  $('.arrow-right').click(function() {
     owl.trigger('.prev.owl.carousel',[300]);
   });
 

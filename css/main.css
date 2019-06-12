@@ -274,6 +274,10 @@ footer {
   text-decoration: none;
   font-family: "Ubuntu"; }
 
+.menu__list li:hover {
+  text-decoration: underline;
+  color: white; }
+
 .btn {
   padding: 0.625rem 0.9375rem;
   border-radius: 0.3125rem;

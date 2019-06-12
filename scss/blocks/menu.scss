@@ -24,7 +24,7 @@
          // выравнивание по pixel perfect
         margin-left: 15px;
         margin-right: 16.3px;
-         
+
     }
 
     &:last-child {
@@ -42,4 +42,12 @@
     text-transform: uppercase;
     text-decoration: none;
     font-family: "Ubuntu";
+}
+
+.menu__list li {
+
+    &:hover {
+    text-decoration: underline;
+    color: white;
+    }
 }

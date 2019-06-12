@@ -186,18 +186,26 @@
         <!-- section best -->
         <section class="section burgers" id="slide-3">
             <div class="burger-container container">
-
-                <div class="arrow-left" id="arrow-left">
-                    <a href="#" class="arrow-left" id="arrow-left" >
-                        <svg class="scroll-icon arrow-left">
-                            <use xlink:href="./sprite.svg#scroll"></use>
-                        </svg>
-                    </a>
+                <div class="">
+                    <div class="arrow-left" id="arrow-left">
+                        <a href="#" class="arrow-left" id="arrow-left" >
+                            <svg class="scroll-icon arrow-left">
+                                <use xlink:href="./sprite.svg#scroll"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="arrow-right" id="arrow-right">
+                        <a href="#" class="arrow-right" id="arrow-right" >
+                            <svg class="scroll-icon arrow-right">
+                                <use xlink:href="./sprite.svg#scroll"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="slide__container">
                     
-                        <div class="burger__items owl-carousel owl-theme" id="burger__items">
+                        <div class="burger__items owl-carousel" id="burger__items">
                             
                             <div class="burger__item">
                                 
@@ -411,13 +419,13 @@
                     
                 </div>
 
-                <div class="arrow-right" id="arrow-right">
+                <!-- <div class="arrow-right owl-next" id="arrow-right">
                     <a href="#" class="arrow-right" id="arrow-right" >
                         <svg class="scroll-icon arrow-right">
                             <use xlink:href="./sprite.svg#scroll"></use>
                         </svg>
                     </a>
-                </div>
+                </div> -->
 
             </div>
         </section>
@@ -804,7 +812,7 @@
                         <div class="information__additional form__information">
                             <div class="form__group">
                                 <label for="note" class="form__label">Комментарий</label>
-                                <textarea class="form__control form__note" id="note" placeholder=" " required></textarea>
+                                <textarea name="comment" class="form__control form__note" id="note" placeholder=" " required></textarea>
                             </div>
                             <div class="row-4">
                                 <div class="radio">

@@ -94,14 +94,14 @@ $(document).ready(function () {
       const request = ajaxForm(form);
 
       request.addEventListener("load", function() {
-        // console.log(request);
+        console.log(request);
         
         if (request.status >=400) {
           overlay.open();
-          overlay.setContent(`Произошла ошибка  ${request.response.message}`);
+          overlay.setContent(`Произошла ошибка  ${request.response.message}`, "Сообщение");
         } else {
           overlay.open();
-          overlay.setContent(request.response.message);
+          overlay.setContent(request.response.message, "Сообщение");
         }
       });
     }

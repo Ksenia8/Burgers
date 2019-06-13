@@ -23,17 +23,17 @@
   
 .overlay__title {
   margin-bottom: rem(20px);
-  color: green;
+  color: black;
 }
   
 .overlay__text {
   line-height: rem(24px);
   width: 100%;
-  color: green;
+  color: black;
   font-weight: 300;
 }
   
-.overlay__close {
+.overlay__close img {
   cursor: pointer;
   color: red;
   position: absolute;

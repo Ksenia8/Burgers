@@ -47,17 +47,17 @@
     }
 }
 
-.owl-prev {
+.arrow-left {
     transform: rotate(90deg);
     position: absolute;
-    top: 20px;
+    top: 20%;
     left: 20px;
     z-index: 1000;
     
     
 }
 
-.owl-next {
+.arrow-right {
     transform: rotate(-90deg);
     position: absolute;
     top: 0;

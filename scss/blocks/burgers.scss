@@ -11,11 +11,11 @@
     position: relative;
 }
 
-.owl-nav {
-    position: absolute;
-    z-index: 2;
+// .owl-nav {
+//     position: absolute;
+//     z-index: 2;
 
-}
+// }
 
 .slide__container {
     display: flex;
@@ -47,21 +47,23 @@
     }
 }
 
+// .arrow {
+//     position: absolute;
+//     top: 50%;
+// }
 .arrow-left {
     transform: rotate(90deg);
     position: absolute;
-    top: 20%;
-    left: 20px;
-    z-index: 1000;
-    
+    top: 50%;
+    left: rem(-50px);
     
 }
 
 .arrow-right {
     transform: rotate(-90deg);
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 50%;
+    right: rem(-50px);
    
 }
 

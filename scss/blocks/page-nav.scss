@@ -1,46 +1,101 @@
+// .page-nav {
+//     position: fixed;
+//     right: 5rem;
+//     // top: 18.4rem;
+//     top: 55%;
+//     transform: translateY(-50%);
+//     z-index: 100000;
+// }
+   
+// .page-nav__item {
+//     @include flex (center);
+// }
+
+// .page-nav__link {
+//     // display: flex;
+//     // justify-content: center;
+//     // align-items: center;
+//     @include flex (center);
+//     width: 1.1rem;
+//     height: 1.1rem;
+//     border: 1px solid transparent;
+//     border-radius: 50%;
+//     margin-bottom: 4px;
+
+//     &--active {
+//         width: 1.1rem;
+//         height: 1.1rem;
+//         border: 1px solid $white;
+//     }
+
+//     &:hover {
+//         width: 1.1rem;
+//         height: 1.1rem;
+//         border: 1px solid $white;
+//         border-radius: 50%;
+//     }
+
+//     &::after {
+//         content: "";
+//         display: flex;
+//         width: 0.4rem;
+//         height: 0.4rem;
+//         border-radius: 50%;
+//         background-color: $white;
+//     }
+// }   
+
+
 .page-nav {
     position: fixed;
-    right: 5rem;
-    // top: 18.4rem;
-    top: 55%;
+    z-index: 100;
+    top: 50%;
     transform: translateY(-50%);
-    z-index: 100000;
+    right: 40px;
+
 }
-   
+
+
 .page-nav__item {
-    @include flex (center);
+    margin: 5px;
+    position: relative;
+
+    &.active {
+        .page-nav__link {
+        border: 1px solid lighten($color: white, $amount: 5%);
+        }
+    }
+
 }
 
 .page-nav__link {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    @include flex (center);
-    width: 1.1rem;
-    height: 1.1rem;
+    display: block;
     border: 1px solid transparent;
-    border-radius: 50%;
-    margin-bottom: 4px;
-
-    &--active {
-        width: 1.1rem;
-        height: 1.1rem;
-        border: 1px solid $white;
-    }
-
-    &:hover {
-        width: 1.1rem;
-        height: 1.1rem;
-        border: 1px solid $white;
-        border-radius: 50%;
-    }
-
+    position: relative;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10em;
+    transition: 0.3s;
+  
     &::after {
-        content: "";
-        display: flex;
-        width: 0.4rem;
-        height: 0.4rem;
-        border-radius: 50%;
-        background-color: $white;
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      height: 6px;
+      width: 6px;
+      border: 0;
+      background: lighten($color:white, $amount: 5%);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.1s ease-in-out;
     }
-}   
+  
+    &:hover {
+      border: 1px solid lighten($color:white, $amount: 5%);
+    }
+  }
+  
+

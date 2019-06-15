@@ -1,8 +1,10 @@
+// owlCarousel
+
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
     nav:true,
     loop:true,
-    margin: 50,
+    margin: 60,
     doots: false,
     smartSpeed: 1000,
     // navigation: true,
@@ -14,12 +16,15 @@ $(document).ready(function(){
     }
   });
 
+  var owl = $('.owl-carousel');
   owl.owlCarousel();
   $('.arrow-left').click(function() {
-    owl.trigger('.next.owl.carousel');
+    owl.trigger('.prev.owl.carousel');
   });
   $('.arrow-right').click(function() {
-    owl.trigger('.prev.owl.carousel',[300]);
+    owl.trigger('.next.owl.carousel');
   });
 
 });
+
+

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(../normalize.css);
+@import url(normalize.css);
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -446,9 +446,7 @@ footer {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(48%, #eb8c38), color-stop(74%, #f9b43b), to(#f9b43b));
   background-image: -webkit-linear-gradient(bottom, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
   background-image: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
-  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%); }
-
-.burger-container {
+  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,7 +467,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 58.75rem;
+  width: 61.25rem;
   overflow: hidden;
   padding: 0 50px; }
 
@@ -487,7 +485,8 @@ footer {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  padding: 0 3.125rem; }
   @media screen and (max-width: 768px) {
     .burger__item {
       display: -webkit-box;
@@ -505,25 +504,20 @@ footer {
 .arrow-left {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  position: absolute;
-  top: 50%;
-  left: -3.125rem; }
+  transform: rotate(90deg); }
 
 .arrow-right {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  position: absolute;
-  top: 50%;
-  right: -3.125rem; }
+  transform: rotate(-90deg); }
 
 .burger__images,
 .burger__desc {
   width: 100%; }
 
-.burger__images img {
-  max-width: 100%; }
+.burger-slide {
+  max-width: 100%;
+  max-height: 100%; }
 
 .burger__images {
   position: relative;
@@ -685,6 +679,19 @@ footer {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; } }
+
+.owl-carousel {
+  width: 100%;
+  position: relative; }
+
+.owl-next {
+  right: 0;
+  position: absolute;
+  top: 50%; }
+
+.owl-prev {
+  position: absolute;
+  top: 50%; }
 
 .accordeon {
   position: relative;
